@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,119;1,119&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --preto: #2E2A35;
+    --branco: #FFFFFF;
+    --roxo: #9F66E9;
+    --lilas: #EEE4FD;
+    --cinza:#D9D9D9;
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-texto: "Kameron", serif; 
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 98vh;
+    background-color: #d3c4e6;
+  
+}
+
+
+.cab{
+    background-color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25rem;
+    height: 210px;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    margin-bottom: 650px;
+}
+
+.link{
+    padding: 30px
+}
+
+h1{
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    background-color: var(--branco);
+    height: 660px;
+    margin-top: 150px;
+    position: absolute;
+    border-radius: 30px 0px 30px 30px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
+
+#form-agenda{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    border: none;
+    border: 1px solid #e2e8f0 ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding-left: 8px;
+}
+
+button{
+    background-color: var(--roxo);
+    border: none;
+    height: 30px;
+    width: 210px;
+    margin-top: 20px;
+    color: var(--branco);
+}
+
+
+div#calendario .flatpickr-calendar {
+    border-radius: 20px !important; /* Cantos bem arredondados como no print */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important; /* Sombra sutil */
+    border: 1px solid #e2e8f0 !important; /* Borda cinza clara */
+    background: #ffffff !important;
+    font-family: var(--fonte-titulo);
+    margin-top: 10px; /* Espaço do topo, se necessário */
+}
+
+
+div#calendario .flatpickr-current-month {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #1e293b !important; /* Texto escuro */
+}
+
+/* 3. Cabeçalho: Setas de Navegação (Mês anterior/próximo) */
+div#calendario .flatpickr-prev-month,
+div#calendario .flatpickr-next-month {
+    color: #3b82f6 !important; /* Setas Azuis */
+    fill: #3b82f6 !important;
+}
+
+/* 4. Dias da Semana (Dom, Seg, Ter...) */
+div#calendario span.flatpickr-weekday {
+    color: var(--preto);/* Texto Azul */
+    font-weight: 600;
+}
+
+/* 5. Estilo dos Dias (Números) */
+div#calendario .flatpickr-day {
+    color: #334155; /* Cor padrão do número */
+    border-radius: 50%; /* Faz o hover ficar redondo */
+}
+
+/* 6. Dia Selecionado (Ex: Dia 21 no print) */
+div#calendario .flatpickr-day.selected,
+div#calendario .flatpickr-day.selected:hover,
+div#calendario .flatpickr-day.selected:focus {
+    background: var(--lilas) !important; /* Fundo Azul Escuro */
+    border-color: var(--lilas)!important;
+    color: var(--preto) !important; /* Número Branco */
+    font-weight: 600;
+}
+
+/* 7. Dias de Outros Meses (Opacos/Desabilitados) */
+div#calendario .flatpickr-day.prevMonthDay,
+div#calendario .flatpickr-day.nextMonthDay,
+div#calendario .flatpickr-day.flatpickr-disabled {
+    color: #cbd5e1 !important; /* Cinza claro */
+}
+
+
+.flatpickr-input {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+
+p{
+    font-family: var(--fonte-texto);
+    color: var(--preto);
+    margin-top: 35px;
+}
+
+
+button:hover{
+    background: var(--lilas); 
+    border-color: var(--lilas);
+    color: var(--preto);
+}

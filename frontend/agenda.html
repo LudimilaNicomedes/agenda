@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="/frontend/CSS/agenda.css">
+    <title>Agenda</title>
+</head>
+<body>
+    <header>
+        <div class="cab">
+            <div class="link"> 
+                <a href=""><img src="/frontend/assets/icons8-janelas-branco-11-32.png" alt="menu hamburguer"></a>
+            </div>
+            <div>
+                <h1>Agenda</h1>
+            </div>
+            <div class="link">
+                <a href="#"><img src="/frontend/assets/icons8-usuário-branco-32 (1).png" alt="usuario"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form id="form-agenda">
+            <div id="calendario">
+                <div id="meu-calendario"></div>
+            </div>
+          
+            <p>Novo Agendamento</p>
+            <label for="nome"></label>
+            <input type="text" name="nome" id="nome" class="nome" required placeholder="Cliente">
+
+            <label for="telefone"></label>
+            <input type="number" name="telefone" id="telefone" class="telefone" required placeholder="Telefone">
+
+            <label for="data_hora"></label>
+            <input type="datetime-local" name="data_hora" id="data_hora" class="data_hora" required>
+
+            <label for="servico"></label>
+            <input type="text" name="servico" id="servico" class="servico" required placeholder="Serviço">
+            <button type="submit" class="bot">Salvar</button>
+        </form>
+    </main>
+    <!-- 1. importa o Flatpickr (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  
+    <!-- 2. tradução para português -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+
+    <script src="/frontend/JS/agenda.js"></script>
+    
+</body>
+</html>
