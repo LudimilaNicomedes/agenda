@@ -163,3 +163,17 @@ button:hover{
     border-color: var(--lilas);
     color: var(--preto);
 }
+
+
+p{
+    font-family: var(--fonte-texto);
+    color: var(--preto);
+    margin-top: 35px;
+}
+
+
+button:hover{
+    background: var(--lilas); 
+    border-color: var(--lilas);
+    color: var(--preto);
+}

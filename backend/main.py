@@ -13,4 +13,7 @@ app.add_middleware(
 
 
 from backend.routers.agenda import agenda
+from backend.routers.usuario import logar , criar
 app.include_router(agenda)
+app.include_router(logar)
+app.include_router(criar)

@@ -24,16 +24,16 @@ document.getElementById('form-agenda').addEventListener('submit', async (event) 
     } else {
         alert('Erro ao cadastrar agendamento.');
     }
+
 });
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Verifique o ID exato que você usou no HTML
+    
     flatpickr("#meu-calendario", {
         inline: true,          // Mantém o calendário visível
         locale: "pt",          // Português
         dateFormat: "Y-m-d",
-        // Certifique-se de que não há nenhuma opção 'wrap: true' aqui,
-        // a menos que você esteja usando um input container específico.
+
     });
 });

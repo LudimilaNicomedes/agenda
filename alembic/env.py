@@ -7,7 +7,7 @@ from alembic import context
 import sys
 import os
 
-from backend.models import agenda
+from backend.models import agenda, usuario
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "...")))
 

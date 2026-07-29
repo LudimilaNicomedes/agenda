@@ -14,7 +14,7 @@ class AgendamentosSchema(BaseModel):
     servico: str
     
 
-@agenda.post('/agendar')
+@agenda.post('/agendar/')
 async def agendamento(dados: AgendamentosSchema, session = Depends(pegar_sessao)):
     novo_agendamento = Agendamento(**dados.model_dump())
     session.add(novo_agendamento)

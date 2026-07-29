@@ -8,4 +8,4 @@ def pegar_sessao():
         session = Session()
         yield session
     finally:
-        session.close()
+        session.close()        
