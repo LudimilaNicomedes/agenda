@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
+    <link rel="stylesheet" href="/frontend/CSS/usuario.css"> 
 </head>
 <body>
-    
+    <main>
+       <section class="principal_login">
+            <div class="imagem">
+                <a href="login.html"><img src="/frontend/assets/icons8-à-esquerda-dentro-de-um-círculo-50.png" alt="seta para a esquerda"></a>
+                <h1>Cadastro</h1>
+                <a href="/frontend/agenda.html"><img src="/frontend/assets/icons8-calendário-64.png" alt="imagem de um calendario"></a>
+            </div>
+            <form id="form_cadastro"> 
+                <p>Cadastre-se</p>
+                <label for="nome"></label>
+                <input type="text" class="nome"  id="nome" name="nome" required placeholder="Nome">
+
+                <label for="email"></label>
+                <input type="email" class="email" id="email" name="email" required placeholder="E-mail">
+                
+                <label for="aniversario"></label>
+                <input type="date" class="data" id="data" name="data" required >
+
+                <label for="telefone"></label>
+                <input type="tel" class="telefone" id="telefone" required placeholder="Telefone">
+
+                <label for="senha"></label>
+                <input type="password" class="senha" id="senha" name="senha" required placeholder="Senha">
+
+                <label for="confir_senha"></label>
+                <input type="password" class="confir_senha" id="confir_senha" name="confir_senha" required placeholder="Confirme sua senha">
+
+
+                <div class="bot_login">
+                    <button type="submit" class="button_login">Entrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="/frontend/JS/usuario.js"></script>
 </body>
 </html>

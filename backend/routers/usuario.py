@@ -29,7 +29,6 @@ async def usuario_login(dados : LoginSchema, session = Depends(pegar_sessao)):
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="E-mail ou senha inválidos")
         
-    
     return{'mensagem': 'Login efetuado com sucesso'}
 
 

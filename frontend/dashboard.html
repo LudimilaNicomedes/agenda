@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/frontend/CSS/dashboard.css">
+  <!-- Chart.js para renderizar o gráfico donut -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+      <a href=""><img src="/frontend/assets/icons8-à-esquerda-dentro-de-um-círculo-50.png" alt="seta para a esquerda"></a>
+      <h1>Dashboard</h1>
+      <a href="/frontend/agenda.html"><img src="/frontend/assets/icons8-calendário-64.png" alt="imagem de um calendario"></a>
+  </header>
+  <main>
+    <div class="dashboard-card">
+      <h2>Análise de Agendamentos</h2>
+
+      <!-- Filtro de Mês e Ano -->
+      <div class="filter-group">
+        <label for="mesAnoSelect">Período:</label>
+        <input type="month" id="mesAnoSelect" onchange="carregarDashboard()">
+      </div>
+
+      <!-- Área do Gráfico -->
+      <div id="chartContainer" class="chart-container">
+        <div class="total-badge">
+          <span id="totalAgendamentos">0</span>
+          <small>Total</small>
+        </div>
+        <canvas id="meuGrafico"></canvas>
+      </div>
+
+      <!-- Fluxo Alternativo 4a: Mensagem quando não há dados -->
+      <div id="avisoVazio" class="alert-warning" style="display: none;">
+        ⚠️ Aviso de dados não encontrados. Por favor, selecione outro período.
+      </div>
+    </div>
+  </main>
+  <script src="/frontend/JS/dashboard.js"></script>
+</body>
+</html>

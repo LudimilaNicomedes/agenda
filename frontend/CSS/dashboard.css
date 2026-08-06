@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,119;1,119&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --preto: #2E2A35;
+    --branco: #FFFFFF;
+    --roxo: #9F66E9;
+    --lilas: #EEE4FD;
+    --cinza:#D9D9D9;
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-texto: "Kameron", serif; 
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 98vh;
+    background-color: #d3c4e6;
+  
+}
+
+header{
+    background-color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25rem;
+    height: 210px;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    margin-bottom: 650px;
+}
+
+
+img{
+    padding: 30px;
+    width: 32px;
+}
+
+h1{
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    background-color: var(--branco);
+    height: 660px;
+    margin-top: 150px;
+    position: absolute;
+    border-radius: 30px 0px 30px 30px;
+}
+
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card h2 {
+  font-size: 1.2rem;
+  color: var(--preto);
+  font-family: var(--fonte-titulo);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.filter-group label {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.filter-group input {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 10px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Badge estilizado no centro do Donut */
+.total-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.total-badge span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--roxo);
+}
+
+.total-badge small {
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+.alert-warning {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  text-align: center;
+  margin-top: 15px;
+}

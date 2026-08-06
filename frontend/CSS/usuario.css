@@ -17,6 +17,7 @@
     --fonte-texto: "Kameron", serif; 
 }
 
+
 body{
     display: flex;
     align-items: center;
@@ -27,38 +28,61 @@ body{
   
 }
 
+.imagem{
+    background-color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25rem;
+    height: 200px;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    margin-top: -160px;
+    margin-bottom: 100px;
+    
+}
+
+img{
+    padding: 30px;
+    width: 32px;
+}
+
+h1{
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+}
+
+
 main{
     display: flex;
     justify-content: center;
     width: 25rem;
     background-color: var(--branco);
     height: 660px;
+    margin-top: 150px;
     position: absolute;
     border-radius: 30px 0px 30px 30px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
 }
 
-.principal_login{
+#login{
     display: flex;
-    align-items: center;
+    gap: 11px;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-.imagem{
-    background-color: var(--roxo);
+#form_cadastro{
     display: flex;
+    gap: 11px;
+    flex-direction: column;
     align-items: center;
-    width: 25rem;
-    height: 210px;
-    border-radius: 25px 25px 0 0;
-    position: relative;
-    margin-bottom: 600px
 }
 
 input{
     height: 30px;
-    width: 200px;
+    width: 300px;
     border: none;
     border: 1px solid #e2e8f0 ;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -74,3 +98,25 @@ button{
     color: var(--branco);
 }
 
+.bot_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+} 
+
+
+
+p{
+    font-family: var(--fonte-texto);
+    color: var(--preto);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+button:hover{
+    background: var(--lilas); 
+    border-color: var(--lilas);
+    color: var(--preto);
+}

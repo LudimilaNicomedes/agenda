@@ -56,7 +56,7 @@ Pré-condição: Nenhuma.
 6 - O sistema salva agendamento e o exibe no calendário  
 
 Fluxo alternativo:
-4a. Se tiver algum campo que não for preenchido: 
+4a. Se tiver algum campo que não foi preenchido: 
 1 - O sistema identifica que há campos obrigatórios não preenchidos 
 2 - O sistema alerta ao usuário sobre os campos e retorna ao passo 3
 
@@ -74,4 +74,9 @@ Fluxo principal:
 Fluxo alternativo:
 4a. Se colocar um ano que não teve nenhum agendamento
 1 - O sistema identifica que não houve nenhum agendamento feito 
-2 - O sistema exibe uma mensagem "aviso de dados não encontrados" e solicita ao usuário que selecione outro período e retorna ao passo 2  
+2 - O sistema exibe uma mensagem "aviso de dados não encontrados" e solicita ao usuário que selecione outro período e retorna ao passo 2
+
+Nome: UC05 - Consultar clientes, excluir ou editar
+Descrição: O usuário modifica algo de clientes cadastrados(consultar, editar ou excluir)
+Pré-condição: Precisa estar autenticado
+Fluxo principal:
