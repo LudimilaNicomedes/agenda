@@ -4,7 +4,7 @@
   <img width="400" height="850" alt="Captura de tela 2026-08-06 114843" src="https://github.com/user-attachments/assets/aaa72dc7-fc17-4e47-8822-eb21f9cbc2af" />
   <img width="400" height="850" alt="Captura de tela 2026-08-06 114852" src="https://github.com/user-attachments/assets/41093d91-6562-410b-a3e7-f6c08760399e" />
   <img width="400" height="850" alt="Captura de tela 2026-08-06 114908" src="https://github.com/user-attachments/assets/480a472c-bfa4-411b-b10e-c146fd272f27" />
-  <img width="400" height="850" alt="Captura de tela 2026-08-06 120103" src="https://github.com/user-attachments/assets/9c083e5c-02b5-421b-a9ec-4254f168aa80" />
+  <img width="400" height="850" alt="Captura de tela 2026-08-06 114832" src="https://github.com/user-attachments/assets/f410f406-aeaf-4e9a-99d1-dc41e2f75251" />
 </p>
 
 Um sistema completo de agendamento e gerenciamento de clientes desenvolvido com **FastAPI**, 
