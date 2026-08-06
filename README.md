@@ -1,3 +1,7 @@
+<img width="465" height="883" alt="Captura de tela 2026-08-06 114908" src="https://github.com/user-attachments/assets/b989a975-6161-475c-9cdb-70f8d07cf68b" />
+<img width="484" height="892" alt="Captura de tela 2026-08-06 114852" src="https://github.com/user-attachments/assets/ee554e87-669f-4433-942c-886599746597" />
+<img width="596" height="904" alt="Captura de tela 2026-08-06 114832" src="https://github.com/user-attachments/assets/07590248-1674-469a-b35d-1134d3dfd7ba" />
+<img width="496" height="904" alt="Captura de tela 2026-08-06 114843" src="https://github.com/user-attachments/assets/bfde7de7-33bb-4c91-8fbc-0a4eb4fd8573" />
 Um sistema completo de agendamento e gerenciamento de clientes desenvolvido com **FastAPI**, 
 **SQLAlchemy, **SQLite** e um frontend interativo em **HTML5/CSS3/JavaScript**. O projeto foi estruturado seguindo boas práticas de arquitetura de software,
 desacoplamento de rotas, controle de migrações de banco de dados e documentação de requisitos.
