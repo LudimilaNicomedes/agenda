@@ -1,7 +1,12 @@
-<img width="465" height="883" alt="Captura de tela 2026-08-06 114908" src="https://github.com/user-attachments/assets/b989a975-6161-475c-9cdb-70f8d07cf68b" />
-<img width="484" height="892" alt="Captura de tela 2026-08-06 114852" src="https://github.com/user-attachments/assets/ee554e87-669f-4433-942c-886599746597" />
-<img width="596" height="904" alt="Captura de tela 2026-08-06 114832" src="https://github.com/user-attachments/assets/07590248-1674-469a-b35d-1134d3dfd7ba" />
-<img width="496" height="904" alt="Captura de tela 2026-08-06 114843" src="https://github.com/user-attachments/assets/bfde7de7-33bb-4c91-8fbc-0a4eb4fd8573" />
+## 📊 Demonstração da Interface
+
+<p align="center">
+  <img width="496" height="904" alt="Captura de tela 2026-08-06 114843" src="https://github.com/user-attachments/assets/aaa72dc7-fc17-4e47-8822-eb21f9cbc2af" /width="500">
+  <img width="484" height="892" alt="Captura de tela 2026-08-06 114852" src="https://github.com/user-attachments/assets/41093d91-6562-410b-a3e7-f6c08760399e" /width="500">
+  <img width="465" height="883" alt="Captura de tela 2026-08-06 114908" src="https://github.com/user-attachments/assets/480a472c-bfa4-411b-b10e-c146fd272f27" /width="500">
+  <img width="596" height="904" alt="Captura de tela 2026-08-06 114832" src="https://github.com/user-attachments/assets/c2c3d7d1-bea7-4526-b5bb-fc7258b6d115" /width="500">
+</p>
+
 Um sistema completo de agendamento e gerenciamento de clientes desenvolvido com **FastAPI**, 
 **SQLAlchemy, **SQLite** e um frontend interativo em **HTML5/CSS3/JavaScript**. O projeto foi estruturado seguindo boas práticas de arquitetura de software,
 desacoplamento de rotas, controle de migrações de banco de dados e documentação de requisitos.
@@ -21,6 +26,7 @@ desacoplamento de rotas, controle de migrações de banco de dados e documentaç
 * **HTML5 & CSS3**: Interface responsiva e estilizada com variáveis CSS, tipografia personalizada (Google Fonts) e paleta moderna.
 * **JavaScript (ES6+)**: Consumo de API via `fetch` assíncrono e manipulação do DOM.
 * **Flatpickr**: Integração de calendário interativo com suporte a localização em Português (`pt-BR`).
+* **Chart.js:** Biblioteca de gráficos para a renderização do dashboard interativo.
 
 ---
 
@@ -31,6 +37,7 @@ desacoplamento de rotas, controle de migrações de banco de dados e documentaç
 - [x] **Validação e Tratamento de Erros**: Respostas HTTP apropriadas (ex: `422 Unprocessable Entity`) e alertas para o usuário final.
 - [x] **Suporte a CORS**: Integração segura entre o servidor backend e a interface web frontend.
 - [x] **Controle de Versão de Banco (Alembic)**: Histórico e execução automatizada de scripts de migração de dados.
+- [x] **Dashboard e Análise (UC04):** Visualização interativa do total e da distribuição de agendamentos por serviço em determinado mês e ano, acompanhada por gráfico estilo donut e tratamento para períodos sem dados registrados.
 
 ## 📁 Estrutura do Projeto
 
@@ -63,11 +70,9 @@ Documentação Swagger interativa: `http://127.0.0.1:8000/docs`
 ## 📈 Próximas Melhorias
 
 - Implementação completa do CRUD
-- Login e autenticação
 - Deploy da aplicação
 - Testes automatizados
 - Docker
-- Melhorias na interface do usuário
 
 
 Este projeto está em constante evolução. Novas funcionalidades serão adicionadas conforme o avanço dos estudos e do desenvolvimento.
