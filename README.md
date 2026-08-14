@@ -12,13 +12,8 @@
 
 Uma aplicação simples e funcional para gerenciamento de compromissos e tarefas do dia a dia.
 
----
+**Agenda** foi desenvolvido para ajudar na organização pessoal e de rotina, permitindo registrar, visualizar e gerenciar tarefas de forma prática.
 
-## 🚀 Sobre o Projeto
-
-O **Agenda** foi desenvolvido para ajudar na organização pessoal e de rotina, permitindo registrar, visualizar e gerenciar tarefas de forma prática.
-
----
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -62,6 +57,7 @@ Agenda/
 │   ├── database.py         # Configuração do Engine do SQLAlchemy
 │   ├── dependencies.py     # Injeção de dependência (Gerenciamento de Sessão)
 │   └── main.py             # Ponto de entrada da aplicação FastAPI
+
 ├── frontend/
 │   ├── assets/             # Ícones e recursos visuais
 │   ├── CSS/                # Estilos visuais da aplicação (usuario.css, agenda.css)
