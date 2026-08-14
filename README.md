@@ -1,10 +1,10 @@
 ## 📊 Demonstração da Interface
 
 <p align="center">
- <img width="500" height="500" alt="Captura de tela 2026-08-06 114843" src="https://github.com/user-attachments/assets/a8cf4121-89d2-49fb-a681-93de9b3a2b31" />
- <img width="500" height="500" alt="Captura de tela 2026-08-06 114852" src="https://github.com/user-attachments/assets/e3edaebe-e3da-479b-91a9-ecfb818b1172" />
- <img width="500" height="500" alt="Captura de tela 2026-08-06 114908" src="https://github.com/user-attachments/assets/bd85e972-96e0-4dba-a353-28c494fc95b2" />
- <img width="500" height="500" alt="Captura de tela 2026-08-06 120600" src="https://github.com/user-attachments/assets/f91d6918-340e-41ba-8721-2ff01954b310" />
+ <img width="400" height="700" alt="Captura de tela 2026-08-06 114843" src="https://github.com/user-attachments/assets/a8cf4121-89d2-49fb-a681-93de9b3a2b31" />
+ <img width="400" height="700" alt="Captura de tela 2026-08-06 114852" src="https://github.com/user-attachments/assets/e3edaebe-e3da-479b-91a9-ecfb818b1172" />
+ <img width="400" height="700" alt="Captura de tela 2026-08-06 114908" src="https://github.com/user-attachments/assets/bd85e972-96e0-4dba-a353-28c494fc95b2" />
+ <img width="400" height="700" alt="Captura de tela 2026-08-06 120600" src="https://github.com/user-attachments/assets/f91d6918-340e-41ba-8721-2ff01954b310" />
 </p>
 
 
