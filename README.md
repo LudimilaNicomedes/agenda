@@ -67,12 +67,3 @@ A API estará rodando em: `http://127.0.0.1:8000`
 Documentação Swagger interativa: `http://127.0.0.1:8000/docs`
 
 
-## 📈 Próximas Melhorias
-
-- Implementação completa do CRUD
-- Deploy da aplicação
-- Testes automatizados
-- Docker
-
-
-Este projeto está em constante evolução. Novas funcionalidades serão adicionadas conforme o avanço dos estudos e do desenvolvimento.
