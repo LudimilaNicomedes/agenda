@@ -76,7 +76,35 @@ Fluxo alternativo:
 1 - O sistema identifica que não houve nenhum agendamento feito 
 2 - O sistema exibe uma mensagem "aviso de dados não encontrados" e solicita ao usuário que selecione outro período e retorna ao passo 2
 
-Nome: UC05 - Consultar clientes, excluir ou editar
-Descrição: O usuário modifica algo de clientes cadastrados(consultar, editar ou excluir)
-Pré-condição: Precisa estar autenticado
+
+Nome: UC05 - Consultar, Editar ou Excluir Agendamento
+Descrição: O usuário consulta a lista de agendamentos para visualizar detalhes, alterar dados ou excluir um registro.
+Pré-condição: Usuário autenticado no sistema.
 Fluxo principal:
+1 - O sistema exibe o campo de pesquisa e a lista de agendamentos.
+2 - O usuário pesquisa e seleciona o agendamento desejado
+3 - O sistema exibe os detalhes do agendamento com as opções de "Editar" e "Excluir"
+4 - O usuário seleciona a opção "Editar"
+5 - O sistema exibe o formulário preenchido e as opções de "Salvar" e "Cancelar".
+6 - O usuário altera os campos desejados e seleciona "Salvar".
+7 - O sistema valida os dados informados.
+8 - O sistema salva as alterações e atualiza a exibição na agenda.
+
+Fluxo alternativo: Cancelar edição (Passo 5)
+1 - O usuário seleciona a opção "Cancelar".
+2 - O sistema descarta as alterações e retorna ao Passo 3 do fluxo principal.
+
+Fluxo alternativo 2: Excluir agendamento (Passo 3)
+1 - O usuário seleciona a opção "Excluir".
+2 - O sistema solicita confirmação: "Tem certeza de que deseja excluir este agendamento?".
+3 - O usuário confirma a exclusão.
+4 - O sistema remove o agendamento e atualiza a exibição na agenda.
+
+Fluxo alternativo 3: Cancelar exclusão (Passo 3 do Fluxo alternativo 2)
+1 - O usuário não confirma a exclusão.
+2 - O sistema cancela a operação e retorna ao Passo 3 do fluxo principal.
+
+Fluxo de exceção: Dados inválidos na edição (Passo 7)
+1 - O sistema identifica dados incorretos ou campos obrigatórios vazios.
+2 - O sistema exibe uma mensagem de alerta indicando os erros.
+3 - O sistema mantém o formulário aberto (Passo 5) para correção.

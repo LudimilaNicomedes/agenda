@@ -10,16 +10,15 @@ class Usuario(Base):
     aniversario = Column ('aniversario', Date, nullable=False)
     telefone = Column('telefone', String, nullable=False )
     senha = Column('senha', String, nullable=False)
-    confir_senha = Column('confir_senha', String, nullable=False) 
 
 
-    def __init__(self, nome, email, aniversario, telefone, senha, confir_senha):
+    def __init__(self, nome, email, aniversario, telefone, senha):
         self.nome = nome
         self.email = email 
         self.aniversario = aniversario
         self.telefone = telefone
         self.senha = senha
-        self.confir_senha = confir_senha
+       
 
 
 

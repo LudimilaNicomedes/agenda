@@ -73,7 +73,7 @@ function renderizarGrafico(dadosServicos) {
         ],
         borderWidth: 2,
         borderColor: '#ffffff',
-        cutout: '72%' // Espaço interno para criar o visual de rosca igual da imagem
+        cutout: '72%' // Espaço interno para criar o visual de rosca 
       }]
     },
     options: {

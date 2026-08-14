@@ -1,28 +1,18 @@
 from fastapi import APIRouter , Depends, HTTPException, status
 from backend.dependencies import pegar_sessao
-from pydantic import BaseModel
-from datetime import date
 from backend.models.usuario import Usuario
+from backend.main import bcrypt_context
+from backend.schemas import UsuarioSchemas
+from sqlalchemy.orm import Session
 
 
 logar = APIRouter(prefix="/login", tags=["Logar"])
 
 criar = APIRouter(prefix="/Criar", tags=["Criar conta"])
 
-class LoginSchema(BaseModel):
-    email: str
-    senha: str
-
-class UsuarioSchema(BaseModel):
-    nome : str
-    email: str
-    aniversario: date
-    telefone: str
-    senha: str
-    confir_senha: str
 
 @logar.post('/login/')
-async def usuario_login(dados : LoginSchema, session = Depends(pegar_sessao)):
+async def usuario_login(dados: UsuarioSchemas, session: Session = Depends(pegar_sessao)):
     usuario = session.query(Usuario).filter(Usuario.email == dados.email, Usuario.senha == dados.senha).first()
     if not usuario:
         raise HTTPException(
@@ -34,7 +24,7 @@ async def usuario_login(dados : LoginSchema, session = Depends(pegar_sessao)):
 
 
 @criar.post('/criar/')
-async def usuario_criar(dados : UsuarioSchema, session = Depends(pegar_sessao)):
+async def usuario_criar(dados: UsuarioSchemas, session: Session = Depends(pegar_sessao)):
     usuario = session.query(Usuario).filter(Usuario.email == dados.email).first()
     if usuario: 
         return{'erro': 'Este e-mail já está cadastrado'}
@@ -43,11 +33,9 @@ async def usuario_criar(dados : UsuarioSchema, session = Depends(pegar_sessao)):
     if usuario:
         return{'erro': 'Este telefone já está cadastrado'}
     
-    usuario = session.query(Usuario).filter(Usuario.confir_senha != dados.senha).first()
-    if usuario:
-        return{'erro': 'Senhas não coincidem'}
     
-    novo_usuario = Usuario(dados.nome, dados.email, dados.aniversario, dados.telefone, dados.senha, dados.confir_senha)
+    senha_cripitografada = bcrypt_context.hash(dados.senha)
+    novo_usuario = Usuario(dados.nome, dados.email, dados.aniversario, dados.telefone, senha_cripitografada)
 
     session.add(novo_usuario)
     session.commit()
