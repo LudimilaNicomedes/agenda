@@ -10,9 +10,7 @@
 
 # 📅 Agenda
 
-Uma aplicação simples e funcional para gerenciamento de compromissos e tarefas do dia a dia.
-
-**Agenda** foi desenvolvido para ajudar na organização pessoal e de rotina, permitindo registrar, visualizar e gerenciar tarefas de forma prática.
+Uma aplicação simples e funcional para gerenciamento de compromissos e tarefas do dia a dia, foi desenvolvido para ajudar na organização pessoal e de rotina, permitindo registrar, visualizar e gerenciar tarefas de forma prática.
 
 
 ## 🚀 Tecnologias Utilizadas
